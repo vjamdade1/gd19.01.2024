@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoDo.com ">
+    <suite-files>
+        <suite-file path="Normal Flow.xml"/>
+        <suite-file path="Editing Lisitng Page only.xml"/>
+        <suite-file path="Editing on Hotel page.xml"/>
+        <suite-file path="Edit inlisting and hotelPage.xml"/>
+        <!--        <suite-file path="testng-seleniumgrid-juiceshop.xml"/>-->
+    </suite-files>
+</suite> 

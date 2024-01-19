@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.traval.qa.test.SearchHotelTest">
+        <methods>
+          <include name="setup"/>
+          <include name="Validate_Hotelpage_bycheckingrequirment_FromHomePage"/>
+          <include name="Validate_CheckoutPagerequirment_From_EditedHotelPage"/>
+          <include name="Edit_the_HotelPage_Details_byMatchingDetails_withHomePage"/>
+          <include name="Validateby_Requirments_Matchingin_ListingPage_FromHomePage"/>
+          <include name="Edit_the_Hotel_Details_ByMatchingDetails_with_EditedListingPage"/>
+          <include name="CloseBrowser"/>
+          <include name="Edit_the_HotelPage_Details_byMatchingDetails_withListingPage"/>
+          <include name="Validate_CheckoutPagerequirment_From_HomePage"/>
+          <include name="Validate_Hotelpage_bycheckingrequirment_FromListingPage"/>
+        </methods>
+      </class> <!-- com.traval.qa.test.SearchHotelTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
