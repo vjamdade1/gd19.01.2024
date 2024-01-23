@@ -14,12 +14,9 @@ pipeline
         }
         stage('test')
         {
-            steps
-            {
-                sh'''
-                clean install
-                '''
-            }
+           sh'''
+           clean install
+           '''
         }
         
     post 
