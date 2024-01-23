@@ -12,6 +12,16 @@ pipeline
                 '''
             }
         }
+        stage('test')
+        {
+            steps
+            {
+                sh'''
+                clean install
+                '''
+            }
+        }
+        
     post 
         success 
         {
