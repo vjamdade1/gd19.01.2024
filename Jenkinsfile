@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh '''
+                
                 mvn package
-                '''
+               
             }
         }
 
         stage('Test') {
             steps {
-                sh '''
+               
                 mvn clean install
-                '''
+               
             }
         }
 
