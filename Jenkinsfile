@@ -1,8 +1,19 @@
-node{
-  stage('SCM Checkout'){
-    git 'https://github.com/vjamdade1/gd19.01.2024'
-  }
-  stage('Compile-Package'){
-    sh 'mvn package'
-  }
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                sh'''
+                mvn package
+                '''
+            }
+        }
+    post {
+        success {
+            echo 'Pipeline succeeded! Notify or perform additional actions here.'
+        }
+        failure {
+            echo 'Pipeline failed! Notify or perform additional actions here.'
+        }
+    }
 }
