@@ -11,11 +11,14 @@ pipeline {
             steps {
                 // Checkout the source code from the Git repository
                 checkout scm
+                  
+                
             }
         }
 
         stage('Build') {
             steps {
+                git 'https://github.com/vjamdade1/gd19.01.2024'
                 // Use Maven to build the project
                 sh "${MAVEN_HOME}/bin/mvn clean install"
             }
